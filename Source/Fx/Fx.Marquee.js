@@ -31,11 +31,12 @@ Fx.Marquee = new Class({
 		this.current = this.wrapMessage(msg);
 	},
 	wrapMessage: function(msg){
+		var wrapper;
 		if (document.id(msg) && document.id(msg).hasClass('fxMarquee')) { //already set up
-			var wrapper = document.id(msg);
+			wrapper = document.id(msg);
 		} else {
 			//create the wrapper
-			var wrapper = new Element('span', {
+			wrapper = new Element('span', {
 				'class':'fxMarquee',
 				styles: {
 					position: 'relative'
