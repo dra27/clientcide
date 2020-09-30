@@ -138,13 +138,13 @@ var TagMaker = new Class({
 									if (ltInput && !ltInput.get('value')) {
 										try {
 											ltInput.set('value', picker.currentPicklet.options.listItemName(data));
-										}catch (e){dbug.log('set value error: ', e);}
+										}catch (e1){dbug.log('set value error: ', e1);}
 									}
 									var val = input.value;
 									if (inputKey == "Full Path" && val.test(/^http:/))
 											input.set('value', val.substring(val.indexOf('/', 7), val.length));
 									this.createOutput();
-								} catch(e){dbug.log(e);}
+								} catch(e2){dbug.log(e2);}
 							}.bind(this)
 						});
 						table.push([inputKey, div]);

@@ -53,6 +53,6 @@ License:
 			}
 		};
 	};
-	try {	StickyWin.Ajax = new Class(SWA(StickyWin)); } catch(e){}
-	try {	StickyWin.Modal.Ajax = new Class(SWA(StickyWin.Modal)); } catch(e){}
+	try {	StickyWin.Ajax = new Class(SWA(StickyWin)); } catch(e1){}
+	try {	StickyWin.Modal.Ajax = new Class(SWA(StickyWin.Modal)); } catch(e2){}
 })();

@@ -15,7 +15,7 @@ $extend(Browser, {
 					var vis = el.isDisplayed();
 					try { //safari sometimes crashes here, so catch it
 						dim = el.getSize();
-					}catch(e){}
+					}catch(e1){}
 					if (!vis){
 						var before = {};
 						//use this method instead of getStyles 
@@ -54,7 +54,7 @@ $extend(Browser, {
 								styles[n[0]] = n[1];
 							});
 							replacement.setStyle(styles);
-						} catch(e){ dbug.log('fixPNG1: ', e);}
+						} catch(e2){ dbug.log('fixPNG1: ', e2);}
 					}
 					if (replacement.cloneEvents) replacement.cloneEvents(el);
 					replacement.replaces(el);
@@ -68,7 +68,7 @@ $extend(Browser, {
 				 	};
 				}
 			}
-		} catch(e) {dbug.log('fixPNG2: ', e);}
+		} catch(e3) {dbug.log('fixPNG2: ', e3);}
 	},
   pngTest: /\.png$/, // saves recreating the regex repeatedly
   scanForPngs: function(el, className) {
