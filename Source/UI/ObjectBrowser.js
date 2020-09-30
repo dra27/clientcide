@@ -40,7 +40,7 @@ var ObjectBrowser = new Class({
 	},
 	//replaceMemberByPath will set the location at the path to the value passed in
 	replaceMemberByPath: function(path, value){
-		if (path === "" || path == "top") return this.data = $H(value);
+		if (path === "" || path == "top") return (this.data = $H(value));
 		var parentObj = this.getMemberByPath( path, true );
 		parentObj[path.split(".").pop()] = value;
 		return this.data;

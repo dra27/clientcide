@@ -200,7 +200,7 @@ var TagMaker = new Class({
 				html = html.replace(/\s\w+\=""/g, "");
 			}
 		});
-		return this.resultInput.value = html;
+		return (this.resultInput.value = html);
 	},
 	insert: function(){
 		if (!this.target) {
