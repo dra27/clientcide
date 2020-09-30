@@ -259,13 +259,6 @@ Autocompleter.Base = new Class({
 
 	fetchCached: function() {
 		return false;
-		if (!this.options.cache
-			|| !this.cached
-			|| !this.cached.length
-			|| this.cached.length >= this.options.maxChoices
-			|| this.queryValue) return false;
-		this.update(this.filter(this.cached));
-		return true;
 	},
 
 	update: function(tokens) {

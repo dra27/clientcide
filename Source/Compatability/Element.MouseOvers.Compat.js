@@ -47,7 +47,6 @@ Element.implement({
 				}
 			}.bind(this)
 		}).swapClass(options.cssOver, options.cssOut);
-		el = null;
 	}
 });
 window.addEvent('domready', function(){
