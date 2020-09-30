@@ -59,7 +59,7 @@ Autocompleter.Base = new Class({
 	initialize: function(element, options) {
 		this.element = document.id(element);
 		this.setOptions(options);
-		this.options.separatorSplit = new RegExp("\s*["+this.options.separator.trim()+"]\s*/");
+		this.options.separatorSplit = new RegExp("\\s*["+this.options.separator.trim()+"]\\s*/");
 		this.build();
 		this.observer = new Observer(this.element, this.prefetch.bind(this), $merge({
 			'delay': this.options.delay
