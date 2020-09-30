@@ -54,7 +54,7 @@ var Confirmer = new Class({
 		try {
 			this.msgHolder = this.prompter.getElement(this.options.msgContainerSelector);
 			if (!this.msgHolder) this.msgHolder = this.prompter;
-		} catch(e){dbug.log(e)}
+		} catch(e){dbug.log(e);}
 	},
 	makePrompter: function(msg){
 		return new Element('div').setStyles(this.options.prompterStyle).appendText(msg);

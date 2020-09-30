@@ -54,7 +54,7 @@ $extend(Browser, {
 								styles[n[0]] = n[1];
 							});
 							replacement.setStyle(styles);
-						} catch(e){ dbug.log('fixPNG1: ', e)}
+						} catch(e){ dbug.log('fixPNG1: ', e);}
 					}
 					if (replacement.cloneEvents) replacement.cloneEvents(el);
 					replacement.replaces(el);
@@ -68,7 +68,7 @@ $extend(Browser, {
 				 	};
 				}
 			}
-		} catch(e) {dbug.log('fixPNG2: ', e)}
+		} catch(e) {dbug.log('fixPNG2: ', e);}
 	},
   pngTest: /\.png$/, // saves recreating the regex repeatedly
   scanForPngs: function(el, className) {
@@ -87,4 +87,4 @@ $extend(Browser, {
     }
   }
 });
-if (Browser.Engine.trident4) window.addEvent('domready', function(){$$('img.fixPNG').each(Browser.fixPNG)});
+if (Browser.Engine.trident4) window.addEvent('domready', function(){$$('img.fixPNG').each(Browser.fixPNG);});

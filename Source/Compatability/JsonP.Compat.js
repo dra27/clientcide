@@ -12,7 +12,7 @@ var JsonP = Class.refactor(Request.JSONP, {
 		var script = this.previous(options);
 		if ($chk(options.globalFunction)) {
 			window[options.globalFunction] = function(r){
-				JsonP.requestors[index].handleResults(r)
+				JsonP.requestors[index].handleResults(r);
 			};
 		}
 		return script;

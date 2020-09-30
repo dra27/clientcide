@@ -66,7 +66,7 @@ $extend(SimpleEditor, {
 		SimpleEditor.commands[key] = {
 			command: command,
 			shortcut: shortcut
-		}
+		};
 	},
 	addCommands: function(commands){
 		$extend(SimpleEditor.commands, commands);
@@ -206,7 +206,7 @@ SimpleEditor.addCommands({
 				}
 				this.container.set('html', input.get('value'));
 				this.preview.show();
-			} catch(e){dbug.log('you need StickyWin.Modal and StickyWin.ui')}
+			} catch(e){dbug.log('you need StickyWin.Modal and StickyWin.ui');}
 		}
 	}
 });

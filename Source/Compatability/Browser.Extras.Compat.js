@@ -14,7 +14,7 @@ $extend(Browser, {
 	redraw: function(element){
 	    var n = document.createTextNode(' ');
 	    this.adopt(n);
-	    (function(){n.dispose()}).delay(1);
+	    (function(){n.dispose();}).delay(1);
 	    return this;
 	}	
 });

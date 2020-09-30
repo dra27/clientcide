@@ -9,7 +9,7 @@ OverText = Class.refactor(OverText, {
 		}
 	},
 	addElement: function(el) {
-		this.instances.push(new OverText(el, this.options))
+		this.instances.push(new OverText(el, this.options));
 	},
 	startPolling: function(){
 		if (!this.instances || !this.instances.length) return this.previous.apply(this, arguments);
