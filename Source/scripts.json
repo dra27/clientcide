@@ -142,7 +142,7 @@
 			"desc":"Allows the user to enter a date in any popuplar format or choose from a calendar."
 		},
 		"DatePicker.Extras":{
-			"deps":["Class.Extras", "Element.Event", "dbug", "StickyWin", "Class.Refactor"],
+			"deps":["Class.Extras", "Element.Event", "dbug", "StickyWin", "Class.Refactor", "DatePicker"],
 			"desc":"Allows the user to enter a date in any popuplar format or choose from a calendar."
 		},
 		"Form.Validator.Tips":{
@@ -303,7 +303,7 @@
 			"desc":"Compatibility for MooTools More 1.2.4"
 		},
 		"Waiter.Compat": {
-			"deps":["String"],
+			"deps":["String", "Class", "Spinner"],
 			"desc":"Compatibility for MooTools More 1.2.4"
 		}
 	}
