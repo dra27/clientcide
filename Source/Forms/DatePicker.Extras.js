@@ -193,7 +193,7 @@ DatePicker = Class.refactor(DatePicker, {
 				var hr = this.stamps[when].hr.get('value').toInt();
 				if (this.stamps[when].ampm.get('value') == "PM" && hr < 12) hr += 12;
 				this.selectedDates[when].setHours(hr);
-				this.selectedDates[when].setMinutes(this.stamps[when]['min'].get('value')||"0");
+				this.selectedDates[when].setMinutes(this.stamps[when].min.get('value')||"0");
 				this.selectedDates[when].setAMPM(this.stamps[when].ampm.get('value')||"AM");
 			}, this);
 		}
